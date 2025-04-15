@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Arquivo - Rádio Educadora FM Batatais</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="date"],
+        input[type="time"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solicitação de Arquivo de Áudio - Rádio Educadora FM Batatais</h1>
+    <p>Prezado(a) ouvinte, utilize o formulário abaixo para solicitar um arquivo de áudio de um trecho específico da programação da Rádio Educadora FM Batatais desde 1978. Por favor, forneça o máximo de detalhes possível para facilitar a sua busca.</p>
+
+    <form action="#" method="post">
+        <div>
+            <label for="data">Data do Trecho (Dia/Mês/Ano):</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+
+        <div>
+            <label for="hora">Horário Aproximado do Trecho:</label>
+            <input type="time" id="hora" name="hora">
+        </div>
+
+        <div>
+            <label for="duracao">Duração Estimada do Trecho (ex: 5 minutos, 30 segundos):</label>
+            <input type="text" id="duracao" name="duracao">
+        </div>
+
+        <div>
+            <label for="descricao">Descrição do Conteúdo (Programa, locutor, assunto, música, etc.):</label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+        </div>
+
+        <div>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="telefone">Seu Telefone (Opcional):</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
+
+        <button type="submit">Enviar Solicitação</button>
+    </form>
+
+    <p>Agradecemos o seu contato. Entraremos em contato o mais breve possível.</p>
+</body>
+</html>
