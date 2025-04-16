@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Arquivo - Rádio Difusora Batatais</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="date"],
+        input[type="time"],
+        input[type="text"],
+        textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solicitação de Arquivo de Áudio - Rádio Difusora Batatais (Desde 1947)</h1>
+
+    <form action="#" method="post">
+        <p>Prezado(a) ouvinte,</p>
+        <p>Para solicitar um trecho específico do arquivo da Rádio Difusora Batatais, por favor, forneça o máximo de detalhes possível abaixo. Isso nos ajudará a localizar o material desejado.</p>
+
+        <div>
+            <label for="data">Data do Trecho (aproximada, se não exata):</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <div>
+            <label for="hora">Hora do Trecho (aproximada, se não exata):</label>
+            <input type="time" id="hora" name="hora">
+        </div>
+
+        <div>
+            <label for="duracao">Duração Aproximada do Trecho:</label>
+            <input type="text" id="duracao" name="duracao" placeholder="Ex: 5 minutos, 30 segundos, etc.">
+        </div>
+
+        <div>
+            <label for="descricao">Descrição do Conteúdo (Programa, locutor, assunto, música, etc.):</label>
+            <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o que você lembra do trecho que procura. Quanto mais detalhes, melhor!"></textarea>
+        </div>
+
+        <div>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="telefone">Seu Telefone (opcional):</label>
+            <input type="text" id="telefone" name="telefone">
+        </div>
+
+        <button type="submit">Enviar Solicitação</button>
+    </form>
+
+    <p>Agradecemos o seu contato com a Rádio Difusora Batatais. Entraremos em contato o mais breve possível.</p>
+</body>
+</html>
